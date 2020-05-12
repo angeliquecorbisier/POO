@@ -34,8 +34,8 @@ if(isset($_POST['login']))
 	$con = Database::connect();
 
 	$username = $_POST['username'];
-	$password = $_POST['password'];
-
+    $password = $_POST['password'];
+    
     if(checkLogin($con,$username,$password))
     
     {
@@ -50,20 +50,6 @@ if(isset($_POST['login']))
 
 }
 
-
-	// function insertinfos($con,$username,$email,$password) {
-	// 	$query = $con->prepare("INSERT INTO users (username,email,password)
-	// 	VALUES(:username,:email,:password)");
-
-	// 	$query->bindParam(":username",$username);
-	// 	$query->bindParam(":email",$email);
-	// 	$query->bindParam(":password",$password);
-
-	// 	return $query->execute();
-
-
-    // }
-    
     function checkLogin($con,$username,$password)
 
         {

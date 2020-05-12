@@ -2,7 +2,7 @@
 
 class Database {
 
-public static function connect()
+public function connect()
 {
     $host = "localhost";
     $username = "root";

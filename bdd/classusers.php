@@ -15,6 +15,7 @@ if(isset($_POST['register']))
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 
+
 	if(insertinfos($con,$username,$email,$password));
 
 	{
