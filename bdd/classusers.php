@@ -2,7 +2,7 @@
 
 session_start();
 
-include_once("database.php");
+include_once("classdatabase.php");
 
 
 if(isset($_POST['register']))
